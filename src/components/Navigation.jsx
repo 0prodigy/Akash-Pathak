@@ -2,9 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const Nav = styled.nav`
-  padding: 20px 50px;
+  padding: 40px 50px;
   display: flex;
   justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 
   > div {
     flex: 1;
@@ -25,6 +28,7 @@ const Nav = styled.nav`
   }
 
   .nav-links {
+    padding-left: calc(100% - 300px);
     ul {
       display: flex;
       list-style: none;
@@ -32,35 +36,15 @@ const Nav = styled.nav`
 
       .nav-link {
         text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 500;
+        text-transform: lowercase;
+        font-weight: 400;
+        letter-spacing: 2px;
         color: inherit;
         padding: 10px 15px;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         cursor: pointer;
-        postion: absolute;
         transition: all 0.5s ease-in;
-      }
-      .active,
-      & .nav-link:hover {
-        color: #ac0000;
-        &:after {
-          content: "";
-          width: 20px;
-          height: 30px;
-          position: absolute;
-          background: url("img/caret-down.svg");
-        }
-      }
-      .chat {
-        color: #ac0000;
-        border: 1px solid #ac0000;
-        transition: background 0.5s ease;
-
-        &:hover {
-          background: #ac0000;
-          color: inherit;
-        }
+        font-family: "Russo One", sans-serif;
       }
     }
   }
@@ -75,11 +59,6 @@ function Navigation() {
       <div className="nav-links">
         <ul>
           <li>
-            <a href="/#" className="nav-link active">
-              about
-            </a>
-          </li>
-          <li>
             <a href="/#" className="nav-link">
               work
             </a>
@@ -92,11 +71,6 @@ function Navigation() {
           <li>
             <a href="/#" className="nav-link">
               contact
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="nav-link chat">
-              Let's Chat
             </a>
           </li>
         </ul>
