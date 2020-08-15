@@ -6,3 +6,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+html::-webkit-scrollbar-track {
+  width: 6px;
+  background: transparent;
+}
+
+html::-webkit-scrollbar {
+  width: 6px;
+  background: #f5efe1;
+}

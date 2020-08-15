@@ -34,6 +34,9 @@ const Wrapper = styled.div`
       }
     }
   }
+  .intro-container {
+    padding-left: 170px;
+  }
   .intro {
     position: relative;
   }
@@ -43,7 +46,7 @@ const Wrapper = styled.div`
       left: 22%;
       top: 12px;
       display: flex;
-      > p:nth-child(2) {
+      > div {
         padding: 58px;
         padding-left: 20px;
       }
@@ -76,6 +79,16 @@ const Wrapper = styled.div`
       }
     }
   }
+  .introduction {
+    width: 450px;
+    margin-left: 310px;
+    margin-top: -124px;
+
+    p {
+      line-height: 1.75rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
 `;
 
 function Main() {
@@ -88,7 +101,7 @@ function Main() {
         <div className="fields">
           <h4>Software Developer</h4>
           <h4>Mix Marital Artist</h4>
-          <h4>Calisthenic &amp; Yoga Practitinoer</h4>
+          <h4>Calisthenic &amp; Yoga Practitioner</h4>
         </div>
       </div>
       <div className="intro-container">
@@ -99,10 +112,10 @@ function Main() {
               <p>
                 <span className="day">{new Date().getDate().toString()}</span>
               </p>
-              <p>
+              <div>
                 <p className="month">{new Date().toDateString().slice(4, 7)}</p>
                 <p>Available for work</p>
-              </p>
+              </div>
             </div>
             <div className="book">
               <a href="/#">
@@ -110,7 +123,15 @@ function Main() {
               </a>
             </div>
           </div>
-          <div className="introduction"></div>
+          <div className="introduction">
+            <p>
+              I am software developer based in India. <br /> I work on top notch
+              web technologies to give user smooth and comfortable expreience.{" "}
+              <br /> I have 1+ year experience of designing and developing user
+              friendly web app. <br /> I love to work my way. Don't trust me go
+              checkout my work.
+            </p>
+          </div>
         </div>
       </div>
     </Wrapper>
