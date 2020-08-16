@@ -4,6 +4,7 @@ import Navigation from "./Navigation";
 import Main from "./Main";
 import Intro from "./Intro";
 import SectionTitle from "./SectionTitle";
+import Project from "./Project";
 
 const HomeWrapper = styled.div`
   background: url("img/bggg.gif");
@@ -25,7 +26,10 @@ function Home() {
       <Main />
       <div className="container">
         <Intro />
-        <SectionTitle h1="selected_" h2="works:" />
+        <section className="projects">
+          <SectionTitle h1="selected_" h2="works:" />
+          <Project />
+        </section>
       </div>
     </HomeWrapper>
   );
