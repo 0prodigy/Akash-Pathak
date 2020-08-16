@@ -20,6 +20,13 @@ const HomeWrapper = styled.div`
     padding: 0 15px;
     margin: 0 auto;
   }
+  .projects {
+    padding-top: 350px;
+  }
+  .skills {
+    padding-top: 250px;
+    padding-bottom: 150px;
+  }
 `;
 
 function Home() {
@@ -60,6 +67,23 @@ function Home() {
             <Skills />
           </div>
         </section>
+      </div>
+      <div className="container">
+        <SectionTitle
+          h1="I am always intrested about cool stuff."
+          h2="Are you minding a project? "
+          style={{ marginLeft: 0 }}
+        />
+        <a
+          href="mailto:pathakvikash9211@gmail.com"
+          style={{
+            textDecorationColor: "#fff",
+            display: "block",
+            marginBottom: "150px",
+          }}
+        >
+          <SectionTitle h1="Let's talk." style={{ marginLeft: 0 }} />
+        </a>
       </div>
       <Footer />
     </HomeWrapper>

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  padding-top: 400px;
   .title {
     margin-left: 16.66%;
   }
@@ -10,13 +9,15 @@ const Wrapper = styled.div`
     font-size: 9rem;
     font-family: "Russo One", san-serif;
     font-weight: 400;
+    line-height: 1;
+    color: #fff;
   }
 `;
 
 function SectionTitle(props) {
   return (
     <Wrapper>
-      <div className="title">
+      <div className="title" style={props.style}>
         <h1>{props.h1} </h1>
         <h1>{props.h2}</h1>
       </div>
