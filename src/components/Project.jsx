@@ -43,12 +43,12 @@ function Project(props) {
       <Wrapper style={{ flexFlow: props.flow }}>
         <div className="img-container">
           <div className="img-wrap">
-            <img src="img/todo.png" alt="todo" />
+            <img src={props.img} alt={props.img} />
           </div>
         </div>
         <div className="details">
-          <h3>Todo list </h3>
-          <p>A simple todo application to scheduled you daily task.</p>
+          <h3>{props.title} </h3>
+          <p>{props.description}</p>
         </div>
       </Wrapper>
     </a>

@@ -28,10 +28,28 @@ function Home() {
         <Intro />
         <section className="projects">
           <SectionTitle h1="selected_" h2="works:" />
-          <Project flow="row-reverse" />
-          <Project />
-          <Project flow="row-reverse" />
-          <Project />
+          <Project
+            flow="row-reverse"
+            title="Todo App"
+            description="A simple todo app to track daily tasks"
+            img="img/todo.png"
+          />
+          <Project
+            title="Todo App"
+            description="A simple todo app to track daily tasks"
+            img="img/todo.png"
+          />
+          <Project
+            flow="row-reverse"
+            title="Todo App"
+            description="A simple todo app to track daily tasks"
+            img="img/todo.png"
+          />
+          <Project
+            title="Todo App"
+            description="A simple todo app to track daily tasks"
+            img="img/todo.png"
+          />
         </section>
       </div>
     </HomeWrapper>
