@@ -5,6 +5,7 @@ import Main from "./Main";
 import Intro from "./Intro";
 import SectionTitle from "./SectionTitle";
 import Project from "./Project";
+import Skills from "./Skills";
 
 const HomeWrapper = styled.div`
   background: url("img/bggg.gif");
@@ -50,6 +51,12 @@ function Home() {
             description="A simple todo app to track daily tasks"
             img="img/todo.png"
           />
+        </section>
+        <section className="skills">
+          <div style={{ textAlign: "right" }}>
+            <SectionTitle h1="skills:" />
+            <Skills />
+          </div>
         </section>
       </div>
     </HomeWrapper>
