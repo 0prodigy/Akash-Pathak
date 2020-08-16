@@ -6,9 +6,11 @@ import Intro from "./Intro";
 import SectionTitle from "./SectionTitle";
 import Project from "./Project";
 import Skills from "./Skills";
+import Footer from "./Footer";
 
 const HomeWrapper = styled.div`
-  background: url("img/bggg.gif");
+  background-image: url("img/bggg.gif");
+  background-color: #0d0d0d;
   width: 100%;
   padding-bottom: 50px;
   color: #fff;
@@ -59,6 +61,7 @@ function Home() {
           </div>
         </section>
       </div>
+      <Footer />
     </HomeWrapper>
   );
 }
