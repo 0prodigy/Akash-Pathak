@@ -3,11 +3,12 @@ import styled from "styled-components";
 import Navigation from "./Navigation";
 import Main from "./Main";
 import Intro from "./Intro";
+import SectionTitle from "./SectionTitle";
 
 const HomeWrapper = styled.div`
   background: url("img/bggg.gif");
   width: 100%;
-  height: 1220px;
+  padding-bottom: 50px;
   color: #fff;
 
   .container {
@@ -24,6 +25,7 @@ function Home() {
       <Main />
       <div className="container">
         <Intro />
+        <SectionTitle h1="selected_" h2="works:" />
       </div>
     </HomeWrapper>
   );
