@@ -28,6 +28,9 @@ function Home() {
         <Intro />
         <section className="projects">
           <SectionTitle h1="selected_" h2="works:" />
+          <Project flow="row-reverse" />
+          <Project />
+          <Project flow="row-reverse" />
           <Project />
         </section>
       </div>
