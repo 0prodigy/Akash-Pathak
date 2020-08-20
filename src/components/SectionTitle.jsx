@@ -6,10 +6,10 @@ const Wrapper = styled.div`
     margin-left: 16.66%;
   }
   h1 {
-    font-size: 9rem;
-    font-family: "Russo One", san-serif;
+    font-size: 120px;
+    font-family: "Monuments", sans-serif;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.1;
     color: #fff;
   }
 `;

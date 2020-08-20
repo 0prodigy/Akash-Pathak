@@ -28,7 +28,7 @@ const Nav = styled.nav`
   }
 
   .nav-links {
-    padding-left: calc(100% - 300px);
+    padding-left: calc(100% - 420px);
     ul {
       display: flex;
       list-style: none;
@@ -44,7 +44,7 @@ const Nav = styled.nav`
         font-size: 1.2rem;
         cursor: pointer;
         transition: all 0.5s ease-in;
-        font-family: "Russo One", sans-serif;
+        font-family: "Monuments", sans-serif;
       }
     }
   }
@@ -54,7 +54,7 @@ function Navigation() {
   return (
     <Nav>
       <div className="logo-container">
-        <img src="img/logo.svg" alt="logo" />
+        {/* <img src="img/logo.svg" alt="logo" /> */}
       </div>
       <div className="nav-links">
         <ul>

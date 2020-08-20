@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 html::-webkit-scrollbar-track {
@@ -15,4 +14,11 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar {
   width: 6px;
   background: #f5efe1;
+}
+
+@font-face {
+  font-family: "Monuments";
+  src: url("./font/MonumentExtended-Regular.otf");
+  src: local("Monuments"), local("Monuments"),
+    url("./font/MonumentExtended-Regular.otf") format("opentype");
 }

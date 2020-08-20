@@ -73,7 +73,7 @@ function Intro() {
             </div>
           </div>
           <div className="book">
-            <a href="/#">
+            <a href="mailto:pathakvikash@9211@gmail.com">
               <p>Schedule</p> <p>Next Meeting</p>{" "}
             </a>
           </div>

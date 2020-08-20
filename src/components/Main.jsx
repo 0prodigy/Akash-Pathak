@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  padding: 60px 0 0 75px;
+  padding: 75px 0 0 75px;
   postion: relative;
   .content {
     position: relative;
     h1 {
-      font-family: "Russo One", sans-serif;
-      font-size: 7.2rem;
+      font-family: "Monuments", sans-serif;
+      font-size: 100px;
       margin: 0;
       color: #fff;
       line-height: 1;
