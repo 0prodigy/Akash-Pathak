@@ -47,7 +47,7 @@ const Wrapper = styled.div`
     padding-right: 40px;
     h3 {
       font-size: 1.4rem;
-      font-family: "Russo One", san-serif;
+      font-family: "Monuments", sans-serif;
       letter-spacing: 1px;
       font-weight: 400;
       color: #fff;

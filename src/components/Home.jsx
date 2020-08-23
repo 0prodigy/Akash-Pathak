@@ -27,6 +27,23 @@ const HomeWrapper = styled.div`
     padding-top: 250px;
     padding-bottom: 150px;
   }
+
+  .lets-talk {
+    color: #f5efe1;
+    padding-top: 0.5rem;
+    display: inline-block;
+    font-size: 7.5rem;
+    font-family: "Monuments", sans-serif;
+    line-height: 1.1;
+    text-decoration: none;
+    margin-bottom: 110px;
+    font-weight: 400;
+  }
+
+  .lets-talk:after {
+    background: #f5efe1;
+    height: 10px;
+  }
 `;
 
 function Home() {
@@ -74,16 +91,11 @@ function Home() {
           h2="Are you minding a project? "
           style={{ marginLeft: 0 }}
         />
-        <a
-          href="mailto:pathakvikash9211@gmail.com"
-          style={{
-            textDecorationColor: "#fff",
-            display: "block",
-            marginBottom: "150px",
-          }}
-        >
-          <SectionTitle h1="Let's talk." style={{ marginLeft: 0 }} />
-        </a>
+        <h1>
+          <a href="mailto:pathakvikash9211@gmail.com" className="lets-talk">
+            Let's Talk.
+          </a>
+        </h1>
       </div>
       <Footer />
     </HomeWrapper>

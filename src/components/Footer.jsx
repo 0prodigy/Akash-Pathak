@@ -21,10 +21,12 @@ const Wrapper = styled.footer`
   .social .row {
     justify-content: space-between;
     a {
-      font-size: 1.21rem;
-      font-weight: 600;
-      box-sizzing: border-box;
-      transition: all 0.5s ease;
+      text-decoration: none;
+      color: #000;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: "Monuments", sans-serif;
+      display: inline-block;
     }
   }
   .links {
@@ -40,6 +42,7 @@ const Wrapper = styled.footer`
       color: #000;
       font-size: 1rem;
       font-weight: 400;
+      font-family: "Monuments", sans-serif;
       display: inline-block;
     }
   }
@@ -56,7 +59,7 @@ function Footer() {
                 <a href="/#">github</a>
               </li>
               <li>
-                <a href="/#">linkdin</a>
+                <a href="/#">linkedin</a>
               </li>
               <li>
                 <a href="/#">twitter</a>

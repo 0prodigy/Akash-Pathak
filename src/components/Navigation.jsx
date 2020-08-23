@@ -45,6 +45,10 @@ const Nav = styled.nav`
         cursor: pointer;
         transition: all 0.5s ease-in;
         font-family: "Monuments", sans-serif;
+
+        &:after {
+          display: none;
+        }
       }
     }
   }
