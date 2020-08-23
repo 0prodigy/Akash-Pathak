@@ -42,7 +42,7 @@ const HomeWrapper = styled.div`
 
   .lets-talk:after {
     background: #f5efe1;
-    height: 10px;
+    height: 14px;
   }
 `;
 
@@ -53,7 +53,7 @@ function Home() {
       <Main />
       <div className="container">
         <Intro />
-        <section className="projects">
+        <section className="projects" id="work">
           <SectionTitle h1="selected_" h2="works:" />
           <Project
             flow="row-reverse"

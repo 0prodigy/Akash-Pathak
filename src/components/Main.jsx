@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 
 function Main() {
   return (
-    <Wrapper>
+    <Wrapper id="home">
       <div className="content">
         <h1>HellO.</h1>
         <h1>I am Akash</h1>

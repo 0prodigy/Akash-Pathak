@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 `;
 function Skills() {
   return (
-    <Wrapper>
+    <Wrapper id="skills">
       <CarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={100}

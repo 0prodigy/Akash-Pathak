@@ -50,29 +50,31 @@ const Wrapper = styled.footer`
 
 function Footer() {
   return (
-    <Wrapper>
+    <Wrapper id="contact">
       <div className="container">
         <div className="row">
           <div className="social">
             <ul className="row">
               <li>
-                <a href="/#">github</a>
+                <a href="https://github.com/0prodigy">github</a>
               </li>
               <li>
-                <a href="/#">linkedin</a>
+                <a href="https://www.linkedin.com/in/akash-pathak-0796a7165/">
+                  linkedin
+                </a>
               </li>
               <li>
-                <a href="/#">twitter</a>
+                <a href="https://twitter.com/pathakprodigy">twitter</a>
               </li>
               <li>
-                <a href="/#">instagram</a>
+                <a href="https://www.hackerrank.com/prodigyDev">hackerrank</a>
               </li>
             </ul>
           </div>
           <div className="links">
             <ul>
               <li>
-                <a href="/#">Back to top</a>
+                <a href="#home">Back to top</a>
               </li>
             </ul>
           </div>

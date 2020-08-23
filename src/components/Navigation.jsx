@@ -63,17 +63,17 @@ function Navigation() {
       <div className="nav-links">
         <ul>
           <li>
-            <a href="/#" className="nav-link">
+            <a href="#work" className="nav-link">
               work
             </a>
           </li>
           <li>
-            <a href="/#" className="nav-link">
+            <a href="#skills" className="nav-link">
               skills
             </a>
           </li>
           <li>
-            <a href="/#" className="nav-link">
+            <a href="#contact" className="nav-link">
               contact
             </a>
           </li>
