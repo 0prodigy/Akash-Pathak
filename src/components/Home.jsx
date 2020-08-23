@@ -57,24 +57,24 @@ function Home() {
           <SectionTitle h1="selected_" h2="works:" />
           <Project
             flow="row-reverse"
-            title="Todo App"
-            description="A simple todo app to track daily tasks"
-            img="img/todo.png"
+            title="Sampurn krishi utthaan foundation"
+            description="A dynamic website to support the indian tradition way of agriculture to grow organic foods. "
+            img="img/projects/krishiUtthanHome.png"
           />
           <Project
-            title="Todo App"
-            description="A simple todo app to track daily tasks"
-            img="img/todo.png"
+            title="Surya Threshers"
+            description="Agircultural product shocasing website. A intiative to provide best agriculture machine at cheapest."
+            img="img/projects/suryaThreserHome.png"
           />
           <Project
             flow="row-reverse"
-            title="Todo App"
-            description="A simple todo app to track daily tasks"
-            img="img/todo.png"
+            title="Vartouhi Creation"
+            description="Women clothing e-commerce webstie. You'll find only indian handmade fabrics product specially for womens."
+            img="img/projects/vartouhiCreationHome.png"
           />
           <Project
             title="Todo App"
-            description="A simple todo app to track daily tasks"
+            description="A simple todo app to track daily tasks.User can update task status, edit and also delete."
             img="img/todo.png"
           />
         </section>

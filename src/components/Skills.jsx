@@ -11,7 +11,9 @@ const Wrapper = styled.div`
   }
   img {
     filter: grayscale(1);
-    width: 100%;
+    width: 50%;
+    max-width: 100%;
+    margin: 0 auto;
     padding: 0 10px;
   }
 `;

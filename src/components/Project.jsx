@@ -41,6 +41,11 @@ const Wrapper = styled.div`
   }
   img {
     width: 100%;
+    filter: grayscale(1);
+    transition: filter 0.5s ease;
+    &:hover {
+      filter: grayscale(0);
+    }
   }
   .details {
     padding-left: 60px;
