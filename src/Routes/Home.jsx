@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Navigation from "../components/Navigation";
 import Main from "../components/Main";
 import Intro from "../components/Intro";
 import SectionTitle from "../components/SectionTitle";
 import Project from "../components/Project";
 import Skills from "../components/Skills";
-import Footer from "../components/Footer";
 
 const HomeWrapper = styled.div`
   background-image: url("img/bggg.gif");
@@ -49,7 +47,6 @@ const HomeWrapper = styled.div`
 function Home() {
   return (
     <HomeWrapper>
-      <Navigation></Navigation>
       <Main />
       <div className="container">
         <Intro />
@@ -97,7 +94,6 @@ function Home() {
           </a>
         </h1>
       </div>
-      <Footer />
     </HomeWrapper>
   );
 }
