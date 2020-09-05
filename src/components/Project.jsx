@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
   position: relative;
@@ -68,7 +69,7 @@ const Wrapper = styled.div`
 
 function Project(props) {
   return (
-    <a href="/#" style={{ textDecoration: "none" }}>
+    <Link to={`/project/${props.id}`} style={{ textDecoration: "none" }}>
       <Wrapper style={{ flexFlow: props.flow }}>
         <div className="img-container">
           <div className="img-wrap">
@@ -90,7 +91,7 @@ function Project(props) {
           <p>{props.description}</p>
         </div>
       </Wrapper>
-    </a>
+    </Link>
   );
 }
 

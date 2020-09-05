@@ -6,7 +6,7 @@ function Routes() {
   return (
     <div>
       <Switch>
-        <Route path="/" exact render={(render) => <Home />} />
+        <Route path="/" exact render={() => <Home />} />
         <Route path="/project/:id" render={(props) => <Project {...props} />} />
       </Switch>
     </div>

@@ -5,6 +5,7 @@ import Intro from "../components/Intro";
 import SectionTitle from "../components/SectionTitle";
 import Project from "../components/Project";
 import Skills from "../components/Skills";
+import Projects from "../project.json";
 
 const HomeWrapper = styled.div`
   background-image: url("img/bggg.gif");
@@ -52,28 +53,14 @@ function Home() {
         <Intro />
         <section className="projects" id="work">
           <SectionTitle h1="selected_" h2="works:" />
-          <Project
-            flow="row-reverse"
-            title="Sampurn krishi utthaan foundation"
-            description="A dynamic website to support the indian tradition way of agriculture to grow organic foods. "
-            img="img/projects/krishiUtthanHome.png"
-          />
-          <Project
-            title="Surya Threshers"
-            description="Agircultural product shocasing website. A intiative to provide best agriculture machine at cheapest."
-            img="img/projects/suryaThreserHome.png"
-          />
-          <Project
-            flow="row-reverse"
-            title="Vartouhi Creation"
-            description="Women clothing e-commerce webstie. You'll find only indian handmade fabrics product specially for womens."
-            img="img/projects/vartouhiCreationHome.png"
-          />
-          <Project
-            title="Todo App"
-            description="A simple todo app to track daily tasks.User can update task status, edit and also delete."
-            img="img/todo.png"
-          />
+          {Projects &&
+            Projects?.map((project, i) => (
+              <Project
+                key={project.id}
+                flow={i % 2 && "row-reverse"}
+                {...project}
+              />
+            ))}
         </section>
         <section className="skills">
           <div style={{ textAlign: "right" }}>
