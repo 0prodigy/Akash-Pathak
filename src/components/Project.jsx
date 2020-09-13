@@ -6,7 +6,6 @@ const Wrapper = styled.div`
   position: relative;
   margin-top: 150px;
   display: flex;
-  flex-wrap: wrap !important;
 
   .img-container {
     flex: 0 0 60%;
@@ -77,6 +76,9 @@ const Wrapper = styled.div`
       max-width: 100%;
       padding: 40px 0 0 15px;
     }
+  }
+  @media (max-width: 600px) {
+    flex-wrap: wrap !important;
   }
 `;
 

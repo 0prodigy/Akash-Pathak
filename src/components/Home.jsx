@@ -12,9 +12,9 @@ const HomeWrapper = styled.div`
   background-image: url("img/bggg.gif");
   background-color: #0d0d0d;
   width: 100%;
+  overflow: auto;
   padding-bottom: 50px;
   color: #fff;
-  overflow: auto;
 
   .container {
     max-width: 1120px;

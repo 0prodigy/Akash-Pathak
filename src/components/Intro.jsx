@@ -65,6 +65,11 @@ const Wrapper = styled.div`
         &:hover {
           color: #fff;
         }
+
+        @media (max-width: 600px) {
+          top: 40%;
+          left: 20%;
+        }
       }
     }
   }
@@ -75,7 +80,8 @@ const Wrapper = styled.div`
 
     @media (max-width: 600px) {
       margin-left: 0;
-      marign-top: -40px;
+      margin-top: -40px;
+      width: 100%;
     }
 
     p {

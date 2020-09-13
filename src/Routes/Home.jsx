@@ -15,6 +15,7 @@ const HomeWrapper = styled.div`
   width: 100%;
   padding-bottom: 50px;
   color: #fff;
+  overflow: auto;
 
   .container {
     max-width: 1120px;
@@ -39,11 +40,18 @@ const HomeWrapper = styled.div`
     text-decoration: none;
     margin-bottom: 110px;
     font-weight: 400;
+
+    @media (max-width: 600px) {
+      font-size: 2.75rem;
+    }
   }
 
   .lets-talk:after {
     background: #f5efe1;
     height: 14px;
+    @media (max-width: 600px) {
+      height: 4px;
+    }
   }
 `;
 

@@ -95,10 +95,4 @@ html::-webkit-scrollbar {
   .container {
     padding: 0 40px !important;
   }
-  .lets-talk {
-    font-size: 2.75rem !important;
-  }
-  .lets-talk::after {
-    height: 5px !important;
-  }
 }
