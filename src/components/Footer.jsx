@@ -12,11 +12,16 @@ const Wrapper = styled.footer`
   }
   .row {
     display: flex;
+    flex-wrap: wrap;
   }
   .social,
   .links {
     max-width: 50%;
     flex: 50%;
+    @media (max-width: 600) {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
   }
   .social .row {
     justify-content: space-between;
@@ -32,10 +37,21 @@ const Wrapper = styled.footer`
   .links {
     text-align: right;
   }
+  .social,
+  .links {
+    @media (max-width: 600px) {
+      padding-top: 15px;
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
   ul {
     list-style: none;
     li {
       display: block;
+      @media (max-width: 600px) {
+        flex: 0 0 50%;
+      }
     }
     a {
       text-decoration: none;
