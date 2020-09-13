@@ -22,6 +22,17 @@ const ProjectWrapper = styled.div`
     padding: 50px;
     .discription {
       flex: 1;
+      .tech-stack {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 50px 0;
+
+        img {
+          width: 60px;
+          margin: 5px 20px;
+        }
+      }
     }
     .full-image-container {
       flex: 2;
@@ -29,6 +40,10 @@ const ProjectWrapper = styled.div`
       .full-image {
         background-size: cover;
         width: 100%;
+        filter: grayscale(1);
+        &:hover {
+          filter: grayscale(0);
+        }
       }
     }
   }
@@ -48,6 +63,12 @@ function Project() {
         <div className="discription">
           <h1>{item.title}</h1>
           <p>{item.description}</p>
+
+          <div class="tech-stack">
+            {item.tech?.map((tech) => (
+              <img src={`/img/${tech}.svg`} alt={tech} />
+            ))}
+          </div>
         </div>
         <div className="full-image-container">
           <img className="full-image" src={item["full-img"]} alt={item.title} />
