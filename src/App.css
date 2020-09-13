@@ -73,14 +73,15 @@ a::after {
   }
 }
 
-html::-webkit-scrollbar-track {
+html::-webkit-scrollbar-thumb {
   width: 6px;
-  background: transparent;
+  min-height: 100px;
+  background: #f5efe1;
 }
 
 html::-webkit-scrollbar {
   width: 6px;
-  background: #f5efe1;
+  background: url("/img/bggg.gif");
 }
 
 @font-face {

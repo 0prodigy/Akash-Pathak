@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import styled from "styled-components";
+import Footer from "../components/Footer";
 import projects from "../project.json";
 
 const ProjectWrapper = styled.div`
@@ -54,7 +55,7 @@ function Project() {
   const item = projects.find((item) => item.id === id);
   return (
     <ProjectWrapper>
-      <div className="back-container">
+      <div className="back-container" id="home">
         <Link to="/">
           <img src="/img/arrow-down.svg" alt="back" />
         </Link>
@@ -74,6 +75,7 @@ function Project() {
           <img className="full-image" src={item["full-img"]} alt={item.title} />
         </div>
       </div>
+      <Footer />
     </ProjectWrapper>
   );
 }
