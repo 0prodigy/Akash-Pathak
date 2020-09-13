@@ -90,3 +90,9 @@ html::-webkit-scrollbar {
   src: local("Monuments"), local("Monuments"),
     url("./font/MonumentExtended-Regular.otf") format("opentype");
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 40px !important;
+  }
+}

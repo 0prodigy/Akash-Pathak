@@ -6,11 +6,18 @@ const Wrapper = styled.div`
   position: relative;
   margin-top: 150px;
   display: flex;
+  flex-wrap: wrap !important;
 
   .img-container {
+    flex: 0 0 60%;
     max-width: 60%;
     height: 160px;
     position: relative;
+
+    @media (max-width: 600px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
 
     .read-more {
       position: absolute;
@@ -63,6 +70,12 @@ const Wrapper = styled.div`
       color: rgba(225, 225, 225, 0.7);
       font-size: 1rem;
       line-height: 1.75;
+    }
+
+    @media (max-width: 600px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 40px 0 0 15px;
     }
   }
 `;

@@ -4,6 +4,11 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   .title {
     margin-left: 16.66%;
+
+    @media (max-width: 600px) {
+      margin: 0;
+      padding: 50px 0 100px 0;
+    }
   }
   h1 {
     font-size: 120px;
@@ -11,6 +16,10 @@ const Wrapper = styled.div`
     font-weight: 400;
     line-height: 1.1;
     color: #fff;
+
+    @media (max-width: 600px) {
+      font-size: 2.75rem;
+    }
   }
 `;
 
