@@ -5,16 +5,29 @@ const Wrapper = styled.div`
   .intro {
     position: relative;
     margin-left: 8.88%;
+
+    @media (max-width: 600px) {
+      padding-top: 50px;
+      margin: 0;
+    }
   }
   .booking {
+    img {
+      max-width: 100%;
+    }
     .avialblity {
       position: absolute;
-      left: 22%;
-      top: 12px;
+      left: 52%;
+      top: 82px;
       display: flex;
       > div {
         padding: 58px;
         padding-left: 20px;
+
+        @media (max-width: 600px) {
+          padding: 0;
+          padding-left: 20px;
+        }
       }
       .day {
         font-size: 6.25rem;
@@ -22,10 +35,20 @@ const Wrapper = styled.div`
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: white;
         -webkit-text-fill-color: transparent;
+        font-family: "Monuments", sans-serif;
+        @media (max-width: 600px) {
+          font-size: 2.25rem;
+          font-weight: 400;
+        }
       }
       .month {
         font-weight: 700;
         font-size: 1.3rem;
+        font-family: "Monuments", sans-serif;
+        @media (max-width: 600px) {
+          font-size: 0.825rem;
+          font-weight: 500;
+        }
       }
     }
     .book {
@@ -49,6 +72,11 @@ const Wrapper = styled.div`
     width: 450px;
     margin-left: 310px;
     margin-top: -124px;
+
+    @media (max-width: 600px) {
+      margin-left: 0;
+      marign-top: -40px;
+    }
 
     p {
       line-height: 1.75rem;

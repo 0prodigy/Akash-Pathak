@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   padding: 75px 0 0 75px;
-  postion: relative;
+  position: relative;
   .content {
     position: relative;
     h1 {
@@ -14,6 +14,7 @@ const Wrapper = styled.div`
       line-height: 1;
       font-weight: 100;
     }
+
     &:after {
       content: "";
       width: 54px;
@@ -32,7 +33,27 @@ const Wrapper = styled.div`
         font-weight: 400;
         line-height: 1.3;
       }
+      @media (max-width: 600px) {
+        position: relative;
+        left: calc(20% + 16px);
+        bottom: 0;
+        right: 0;
+      }
     }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 4.25rem;
+      }
+      &:after {
+        right: 0;
+        left: 10px;
+        bottom: 12px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 130px 0 0 40px;
   }
 `;
 
