@@ -6,6 +6,8 @@ import SectionTitle from "../components/SectionTitle";
 import Project from "../components/Project";
 import Skills from "../components/Skills";
 import Projects from "../project.json";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 const HomeWrapper = styled.div`
   background-image: url("img/bggg.gif");
@@ -48,6 +50,7 @@ const HomeWrapper = styled.div`
 function Home() {
   return (
     <HomeWrapper>
+      <Navigation />
       <Main />
       <div className="container">
         <Intro />
@@ -81,6 +84,7 @@ function Home() {
           </a>
         </h1>
       </div>
+      <Footer />
     </HomeWrapper>
   );
 }
