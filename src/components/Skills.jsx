@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { CarouselProvider, Slider, Slide, Image } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import { useEffect } from "react";
 
 const Wrapper = styled.div`
   padding: 40px 20px;
@@ -15,9 +16,22 @@ const Wrapper = styled.div`
     max-width: 100%;
     margin: 0 auto;
     padding: 0 10px;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
 `;
 function Skills() {
+  const [slide, setSlide] = useState(3);
+  const width = window.innerWidth;
+  useEffect(() => {
+    if (width <= 600) {
+      setSlide(2);
+    } else {
+      setSlide(3);
+    }
+  }, [width]);
   return (
     <Wrapper id="skills">
       <CarouselProvider
@@ -26,7 +40,8 @@ function Skills() {
         totalSlides={10}
         isPlaying={true}
         interval={3000}
-        visibleSlides={3}
+        visibleSlides={slide}
+        infinite={true}
       >
         <Slider>
           <Slide index={0}>
