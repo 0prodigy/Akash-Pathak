@@ -17,17 +17,21 @@ const Wrapper = styled.div`
     }
     .avialblity {
       position: absolute;
-      left: 52%;
-      top: 82px;
+      left: 24%;
+      top: 35px;
       display: flex;
       > div {
         padding: 58px;
         padding-left: 20px;
-
         @media (max-width: 600px) {
-          padding: 0;
-          padding-left: 20px;
+          padding: 0 0 0 20px;
         }
+      }
+      @media (max-width: 600px) {
+        left: 52%;
+        top: 82px;
+        padding: 0;
+        padding-left: 20px;
       }
       .day {
         font-size: 6.25rem;
@@ -114,11 +118,11 @@ function Intro() {
         </div>
         <div className="introduction">
           <p>
-            I am software developer based in India. <br /> I work on top notch
-            web technologies to give user smooth and comfortable expreience.{" "}
+            Akash Pathak is a software developer based in India. <br /> I
+            convert idea into code to bring the change you want. <br />
+            You have any idea? let's change the world.
             <br /> I have 1+ year experience of designing and developing user
-            friendly web app. <br /> I love to work my way. Don't trust me go
-            checkout my work.
+            friendly aand web app. <br />
           </p>
         </div>
       </div>
