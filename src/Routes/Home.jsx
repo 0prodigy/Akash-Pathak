@@ -76,7 +76,7 @@ function Home() {
               />
             ))}
         </section>
-        <section className="skills">
+        <section className="skills" id="skills">
           <div style={{ textAlign: "right" }}>
             <SectionTitle h1="skills:" />
           </div>
