@@ -4,10 +4,10 @@ import Main from "../components/Main";
 import Intro from "../components/Intro";
 import SectionTitle from "../components/SectionTitle";
 import Project from "../components/Project";
-import Skills from "../components/Skills";
 import Projects from "../project.json";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import SkillGrid from "../components/SkillGrid";
 
 const HomeWrapper = styled.div`
   background-image: url("img/bggg.gif");
@@ -27,7 +27,6 @@ const HomeWrapper = styled.div`
   }
   .skills {
     padding-top: 250px;
-    padding-bottom: 150px;
   }
 
   .lets-talk {
@@ -53,6 +52,10 @@ const HomeWrapper = styled.div`
       height: 4px;
     }
   }
+
+  .talk h1 {
+    font-size: 3rem !important;
+  }
 `;
 
 function Home() {
@@ -76,11 +79,11 @@ function Home() {
         <section className="skills">
           <div style={{ textAlign: "right" }}>
             <SectionTitle h1="skills:" />
-            <Skills />
           </div>
         </section>
       </div>
-      <div className="container">
+      <SkillGrid />
+      <div className="container talk">
         <SectionTitle
           h1="I am always intrested about cool stuff."
           h2="Are you minding a project? "
