@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import styled from "styled-components";
 import Footer from "../components/Footer";
@@ -53,6 +54,11 @@ const ProjectWrapper = styled.div`
 function Project() {
   const { id } = useParams();
   const item = projects.find((item) => item.id === id);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <ProjectWrapper>
       <div className="back-container" id="home">
