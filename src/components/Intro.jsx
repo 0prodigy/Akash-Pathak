@@ -118,11 +118,11 @@ function Intro() {
         </div>
         <div className="introduction">
           <p>
-            Akash Pathak is a software developer based in India. <br /> I
-            convert idea into code to bring the change you want. <br />
+            Akash Pathak is a software developer based in India. <br /> He love
+            to convert idea into code to bring the change you want. <br />
             You have any idea? let's change the world.
-            <br /> I have 1+ year experience of designing and developing user
-            friendly aand web app. <br />
+            <br /> He have 1+ year experience of designing and developing user
+            friendly web app. <br />
           </p>
         </div>
       </div>
