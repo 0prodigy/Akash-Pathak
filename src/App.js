@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import Routes from "./Routes/Routes";
 import styled from "styled-components";
+import AOS from "aos";
 
 const AppWrapper = styled.div`
   background-image: url("img/bggg.gif");
@@ -13,6 +14,9 @@ const AppWrapper = styled.div`
 `;
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <AppWrapper className="App">
       <Routes />

@@ -86,7 +86,14 @@ function Project(props) {
   return (
     <Link to={`/project/${props.id}`} style={{ textDecoration: "none" }}>
       <Wrapper style={{ flexFlow: props.flow }}>
-        <div className="img-container">
+        <div
+          className="img-container"
+          data-aos="slide-right"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="true"
+        >
           <div className="img-wrap">
             <img src={props.img} alt={props.img} />
           </div>
@@ -101,7 +108,14 @@ function Project(props) {
             <img src="img/more-details.svg" alt="read-more" />
           </div>
         </div>
-        <div className="details">
+        <div
+          className="details"
+          data-aos="slide-left"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="true"
+        >
           <h3>{props.title} </h3>
           <p>{props.description}</p>
         </div>

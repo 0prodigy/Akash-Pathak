@@ -26,7 +26,12 @@ const Wrapper = styled.div`
 function SectionTitle(props) {
   return (
     <Wrapper>
-      <div className="title" style={props.style}>
+      <div
+        className="title"
+        style={props.style}
+        data-aos="fade-up"
+        data-aos-delay="50"
+      >
         <h1>{props.h1} </h1>
         <h1>{props.h2}</h1>
       </div>
