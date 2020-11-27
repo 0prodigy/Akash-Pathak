@@ -30,7 +30,7 @@ function SectionTitle(props) {
         className="title"
         style={props.style}
         data-aos="fade-up"
-        data-aos-delay="50"
+        data-aos-delay="200"
       >
         <h1>{props.h1} </h1>
         <h1>{props.h2}</h1>
