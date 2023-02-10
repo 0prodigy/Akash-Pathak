@@ -66,7 +66,7 @@ function Main() {
         <h1>Pathak</h1>
         <div className="fields">
           <h4>Software Developer</h4>
-          <h4>Mix Marital Artist</h4>
+          <h4>Mix Martial Artist</h4>
           <h4>Calisthenic &amp; Yoga Practitioner</h4>
         </div>
       </div>
