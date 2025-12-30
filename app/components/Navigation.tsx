@@ -74,73 +74,114 @@ export function Navigation() {
 
 function WorkModal({ onClose }: { onClose: () => void }) {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center px-6 py-12
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center px-6 py-12
       dark:bg-black/60 light:bg-black/40"
-      onClick={onClose}>
-      <div className="w-full max-w-2xl max-h-[80vh] overflow-y-auto rounded-lg
+      onClick={onClose}
+    >
+      <div
+        className="w-full max-w-2xl max-h-[80vh] overflow-y-auto rounded-lg
         dark:bg-[#1a1a1a] light:bg-white
         dark:border dark:border-[#252525] light:border light:border-[#e0dcd5]
         p-8 md:p-10"
-        onClick={(e) => e.stopPropagation()}>
-        
+        onClick={(e) => e.stopPropagation()}
+      >
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-2xl
             dark:text-[#a8a8a8] light:text-[#6b7280]
-            hover:dark:text-[#f5f1ed] hover:light:text-[#1a1a1a]">
+            hover:dark:text-[#f5f1ed] hover:light:text-[#1a1a1a]"
+        >
           ×
         </button>
 
-        <h2 className="text-3xl font-bold mb-8
-          dark:text-[#f5f1ed] light:text-[#1a1a1a]">
+        <h2
+          className="text-3xl font-bold mb-8
+          dark:text-[#f5f1ed] light:text-[#1a1a1a]"
+        >
           Experience
         </h2>
 
         {/* Lyric */}
-        <div className="mb-12 pb-8 border-b
-          dark:border-[#252525] light:border-[#e0dcd5]">
+        <div
+          className="mb-12 pb-8 border-b
+          dark:border-[#252525] light:border-[#e0dcd5]"
+        >
           <div className="mb-4">
-            <h3 className="text-xl font-semibold
-              dark:text-[#f5f1ed] light:text-[#1a1a1a]">
+            <h3
+              className="text-xl font-semibold
+              dark:text-[#f5f1ed] light:text-[#1a1a1a]"
+            >
               Lyric
             </h3>
-            <p className="text-sm
-              dark:text-[#c89968] light:text-[#a0714f]">
+            <p
+              className="text-sm
+              dark:text-[#c89968] light:text-[#a0714f]"
+            >
               Software Engineer — June 2024 – Present
             </p>
           </div>
-          <p className="mb-4
-            dark:text-[#a8a8a8] light:text-[#6b7280]">
-            Built distributed compute infrastructure from scratch using Ray and Spark for supply chain ML workloads. Also developed initial web dashboard UI and component libraries for the platform.
+          <p
+            className="mb-4
+            dark:text-[#a8a8a8] light:text-[#6b7280]"
+          >
+            Built distributed compute infrastructure from scratch using Ray and
+            Spark for supply chain ML workloads. Also developed initial web
+            dashboard UI and component libraries for the platform.
           </p>
-          <ul className="space-y-2 text-sm mb-4
-            dark:text-[#a8a8a8] light:text-[#6b7280]">
+          <ul
+            className="space-y-2 text-sm mb-4
+            dark:text-[#a8a8a8] light:text-[#6b7280]"
+          >
             <li className="flex gap-3">
-              <span className="dark:text-[#c89968] light:text-[#a0714f]">→</span>
-              <span>Reduced 8-hour compute jobs to 30 minutes through Ray orchestration</span>
+              <span className="dark:text-[#c89968] light:text-[#a0714f]">
+                →
+              </span>
+              <span>
+                Reduced 8-hour compute jobs to 30 minutes through Ray
+                orchestration
+              </span>
             </li>
             <li className="flex gap-3">
-              <span className="dark:text-[#c89968] light:text-[#a0714f]">→</span>
-              <span>Built observability and monitoring for distributed systems</span>
+              <span className="dark:text-[#c89968] light:text-[#a0714f]">
+                →
+              </span>
+              <span>
+                Built observability and monitoring for distributed systems
+              </span>
             </li>
             <li className="flex gap-3">
-              <span className="dark:text-[#c89968] light:text-[#a0714f]">→</span>
-              <span>Created reusable component library and design system for internal dashboards</span>
+              <span className="dark:text-[#c89968] light:text-[#a0714f]">
+                →
+              </span>
+              <span>
+                Created reusable component library and design system for
+                internal dashboards
+              </span>
             </li>
             <li className="flex gap-3">
-              <span className="dark:text-[#c89968] light:text-[#a0714f]">→</span>
-              <span>Optimized infrastructure costs across the entire stack</span>
+              <span className="dark:text-[#c89968] light:text-[#a0714f]">
+                →
+              </span>
+              <span>
+                Optimized infrastructure costs across the entire stack
+              </span>
             </li>
           </ul>
 
           <div>
-            <h4 className="font-semibold mb-2 text-sm
-              dark:text-[#f5f1ed] light:text-[#1a1a1a]">
+            <h4
+              className="font-semibold mb-2 text-sm
+              dark:text-[#f5f1ed] light:text-[#1a1a1a]"
+            >
               Tech Stack
             </h4>
-            <p className="text-sm
-              dark:text-[#a8a8a8] light:text-[#6b7280]">
-              Python, Kubernetes, Ray, Spark, React, TypeScript, OpenTelemetry, AWS
+            <p
+              className="text-sm
+              dark:text-[#a8a8a8] light:text-[#6b7280]"
+            >
+              Python, Kubernetes, Ray, Spark, React, TypeScript, OpenTelemetry,
+              AWS
             </p>
           </div>
         </div>
@@ -148,70 +189,132 @@ function WorkModal({ onClose }: { onClose: () => void }) {
         {/* Tune.ai */}
         <div className="pb-8">
           <div className="mb-4">
-            <h3 className="text-xl font-semibold
-              dark:text-[#f5f1ed] light:text-[#1a1a1a]">
+            <h3
+              className="text-xl font-semibold
+              dark:text-[#f5f1ed] light:text-[#1a1a1a]"
+            >
               Tune.ai (formerly NimbleBox.ai)
             </h3>
-            <p className="text-sm
-              dark:text-[#c89968] light:text-[#a0714f]">
+            <p
+              className="text-sm
+              dark:text-[#c89968] light:text-[#a0714f]"
+            >
               Founding Engineer — March 2021 – June 2024
             </p>
           </div>
-          
+
           <div className="mb-6">
-            <h4 className="font-semibold mb-3 text-sm
-              dark:text-[#f5f1ed] light:text-[#1a1a1a]">
+            <h4
+              className="font-semibold mb-3 text-sm
+              dark:text-[#f5f1ed] light:text-[#1a1a1a]"
+            >
               As Team Lead
             </h4>
-            <ul className="space-y-2 text-sm
-              dark:text-[#a8a8a8] light:text-[#6b7280]">
+            <ul
+              className="space-y-2 text-sm
+              dark:text-[#a8a8a8] light:text-[#6b7280]"
+            >
               <li className="flex gap-3">
-                <span className="dark:text-[#c89968] light:text-[#a0714f]">→</span>
+                <span className="dark:text-[#c89968] light:text-[#a0714f]">
+                  →
+                </span>
                 <span>Led 8-person team across core platform projects</span>
               </li>
               <li className="flex gap-3">
-                <span className="dark:text-[#c89968] light:text-[#a0714f]">→</span>
-                <span>Standardized observability with OpenTelemetry across all services</span>
+                <span className="dark:text-[#c89968] light:text-[#a0714f]">
+                  →
+                </span>
+                <span>
+                  Standardized observability with OpenTelemetry across all
+                  services
+                </span>
               </li>
               <li className="flex gap-3">
-                <span className="dark:text-[#c89968] light:text-[#a0714f]">→</span>
-                <span>Reduced development time by 40% through component reuse</span>
+                <span className="dark:text-[#c89968] light:text-[#a0714f]">
+                  →
+                </span>
+                <span>
+                  Reduced development time by 40% through component reuse
+                </span>
               </li>
+              
             </ul>
           </div>
 
-          <div className="mb-6 p-4 rounded-lg
+          <div
+            className="mb-6 p-4 rounded-lg
             dark:bg-[#0f0f0f] light:bg-[#f9fafb]
-            dark:border dark:border-[#252525] light:border light:border-[#e0dcd5]">
-            <h4 className="font-semibold mb-3 text-sm
-              dark:text-[#f5f1ed] light:text-[#1a1a1a]">
+            dark:border dark:border-[#252525] light:border light:border-[#e0dcd5]"
+          >
+            <h4
+              className="font-semibold mb-3 text-sm
+              dark:text-[#f5f1ed] light:text-[#1a1a1a]"
+            >
               Key Projects & Impact
             </h4>
-            <ul className="space-y-2 text-sm
-              dark:text-[#a8a8a8] light:text-[#6b7280]">
-              <li><strong>GPU Billing:</strong> Built system handling $1M+ monthly operations with 99.9% accuracy</li>
-              <li><strong>Model Serving:</strong> Designed dynamic proxy architecture cutting latency by 40%</li>
-              <li><strong>Kubernetes Operators:</strong> Orchestration layer for ML workflows with GPU-aware scheduling</li>
-              <li><strong>Model Caching:</strong> S3-backed system reducing cold starts by 60%</li>
-              <li><strong>Product Scale:</strong> Shipped infrastructure powering 500K+ users on Tune Chat</li>
-              <li><strong>Llama Deployment:</strong> Among first to deploy Meta Llama 2 (24 hours after release) and Llama 3 (1 hour). Recognized by Meta as India partner.</li>
+            <ul
+              className="space-y-2 text-sm
+              dark:text-[#a8a8a8] light:text-[#6b7280]"
+            >
+              <li>
+                <strong>GPU Billing:</strong> Built system handling $1M+ monthly
+                operations with 99.9% accuracy
+              </li>
+              <li>
+                <strong>Model Serving:</strong> Designed dynamic proxy
+                architecture cutting latency by 40%
+              </li>
+              <li>
+                <strong>Data Processing Pipeline:</strong> Architected data processing pipeline running inference on 100K+
+                documents/day for extraction tasks with 96% accuracy, becoming the
+                biggest revenue driver for Tune AI.
+              </li>
+              <li>
+                <strong>Kubernetes Operators:</strong> Orchestration layer for
+                ML workflows with GPU-aware scheduling
+              </li>
+              <li>
+                <strong>Model Caching:</strong> S3-backed system reducing cold
+                starts by 60%
+              </li>
+              <li>
+                <strong>Product Scale:</strong> Shipped infrastructure powering
+                500K+ users on Tune Chat
+              </li>
+              <li>
+                <strong>Llama Deployment:</strong> Among first to deploy Meta
+                Llama 2 (24 hours after release) and Llama 3 (1 hour).
+                Recognized by Meta as India partner.
+              </li>
             </ul>
           </div>
 
           <div className="mb-6">
-            <h4 className="font-semibold mb-3 text-sm
-              dark:text-[#f5f1ed] light:text-[#1a1a1a]">
+            <h4
+              className="font-semibold mb-3 text-sm
+              dark:text-[#f5f1ed] light:text-[#1a1a1a]"
+            >
               Tech Stack
             </h4>
-            <p className="text-sm
-              dark:text-[#a8a8a8] light:text-[#6b7280]">
-              Go, Python, TypeScript, Kubernetes, Docker, gRPC, Terraform, PostgreSQL, Redis, OpenTelemetry, Prometheus, React, Next.js, TailwindCSS, AWS, GCP
+            <p
+              className="text-sm
+              dark:text-[#a8a8a8] light:text-[#6b7280]"
+            >
+              Go, Python, TypeScript, Kubernetes, Docker, gRPC, Terraform,
+              PostgreSQL, Redis, OpenTelemetry, Prometheus, React, Next.js,
+              TailwindCSS, AWS, GCP
             </p>
           </div>
 
-          <div className="text-sm
-            dark:text-[#747474] light:text-[#9ca3af]">
-            <p>Saw Tune through the full startup journey—from PMF discovery to scaling with major enterprise customers. Backed by Accel, Techstars, and recognized by Meta as an India partner.</p>
+          <div
+            className="text-sm
+            dark:text-[#747474] light:text-[#9ca3af]"
+          >
+            <p>
+              Saw Tune through the full startup journey—from PMF discovery to
+              scaling with major enterprise customers. Backed by Accel,
+              Techstars, and recognized by Meta as an India partner.
+            </p>
           </div>
         </div>
       </div>
